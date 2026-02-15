@@ -1,29 +1,22 @@
 ﻿
-
-var isValide = false;
+int result;
 int count = 0;
- do { 
-  Console.WriteLine("quel jour de la semaine somme nous ?");
-string day = Console.ReadLine()?? "erreur";
-  switch (day){
-  case "lundi":
-  case "mardi":
-  case "mercredi":
-  case "jeudi":
-  case "vendredi":
-  isValide = true;
-  Console.Write("cest un jour de travail");
-  break;
-  case "samedi":
-  case "dimanche":
-  isValide = true;
-  Console.Write("c'est le weekend");
-  break;
-  default: 
-  isValide = false;
-  count++;
-  Console.Write("erreur de saisie");
-  break;
-  }
- }while(!isValide&&count <3);
- 
+Random random = new Random();
+int nombre = random.Next(1, 11);
+do {
+  Console.WriteLine("Devinez le nombre (entre 1 et 10)");
+ result = int.Parse(Console.ReadLine()??"");
+
+ if (result == nombre){
+  Console.WriteLine("Bravo");
+ } else {
+   Console.WriteLine("Perdu essaye encore");
+   count++;
+ }
+} while(result != nombre && count <3);
+
+if (count >= 3){
+  Console.WriteLine("perdu");
+}else{
+Console.WriteLine("gagné");
+}
