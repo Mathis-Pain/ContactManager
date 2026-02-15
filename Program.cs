@@ -1,9 +1,20 @@
-﻿Console.Write("quelle est ton age?");
-int age = int.Parse(Console.ReadLine() ?? "0");
-if (age<18){
-  Console.WriteLine("tu es mineur");
-}else if (age>65){
-Console.WriteLine("tu es senior");
-}else{ 
-  Console.WriteLine("tu es majeur");
-  }
+﻿Console.Write("quel jour de la semaine some nous ?");
+string day = Console.ReadLine()?? "erreur";
+
+
+switch (day){
+  case "lundi":
+  case "mardi":
+  case "mercredi":
+  case "jeudi":
+  case "vendredi":
+  Console.WriteLine("cest un jour de travail");
+  break;
+  case "samedi":
+  case "dimanche":
+  Console.WriteLine("c'est le weekend");
+  break;
+default: 
+  Console.WriteLine("erreur de saisie");
+  break;
+}
