@@ -1,0 +1,14 @@
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/bin/Debug/net10.0/ContactManager
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/bin/Debug/net10.0/ContactManager.deps.json
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/bin/Debug/net10.0/ContactManager.runtimeconfig.json
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/bin/Debug/net10.0/ContactManager.dll
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/bin/Debug/net10.0/ContactManager.pdb
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.AssemblyInfoInputs.cache
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.AssemblyInfo.cs
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.csproj.CoreCompileInputs.cache
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.dll
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/refint/ContactManager.dll
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.pdb
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.genruntimeconfig.cache
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ref/ContactManager.dll
