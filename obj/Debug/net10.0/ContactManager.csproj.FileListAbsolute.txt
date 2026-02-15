@@ -12,3 +12,4 @@
 /Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.pdb
 /Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.genruntimeconfig.cache
 /Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ref/ContactManager.dll
+/Users/mathispain/Desktop/projet-perso/JS SQL/ContactManager/obj/Debug/net10.0/ContactManager.sourcelink.json
