@@ -1,22 +1,15 @@
-﻿
-int result;
-int count = 0;
-Random random = new Random();
-int nombre = random.Next(1, 11);
+﻿List<string> fruit = new List<string>();
+string item = "";
+List<string> items = new List<string>();
 do {
-  Console.WriteLine("Devinez le nombre (entre 1 et 10)");
- result = int.Parse(Console.ReadLine()??"");
+  Console.WriteLine("ajoute un item");
+  item = Console.ReadLine()??"";
+  if (item != "fin"){
+items.Add(item);
+  }
+}while(item != "fin");
 
- if (result == nombre){
-  Console.WriteLine("Bravo");
- } else {
-   Console.WriteLine("Perdu essaye encore");
-   count++;
- }
-} while(result != nombre && count <3);
-
-if (count >= 3){
-  Console.WriteLine("perdu");
-}else{
-Console.WriteLine("gagné");
+foreach(string i in items){
+  Console.WriteLine(i);
 }
+Console.WriteLine(items.Count);
