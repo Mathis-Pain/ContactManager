@@ -8,6 +8,8 @@ Fonctionnalités :
 - Supprimer un contact
 - Rechercher un contact
 
+## premier pas
+
 Cration du dossier principale et initialisation du projet
 
 - dotnet new console : initialise le projet comme un npm init en js/node
@@ -21,3 +23,28 @@ Console.ReadLine(); cree un prompt utilisateur qui renvoi une string
 int.Parse converti une string en int
 git checkout -- . annule toute modification non sauvegardé dans le fichier actuel
 git checkout main
+
+## creation de la bdd
+
+- taper la commande dotnet add package Microsoft.Data.Sqlite - installe la bibliothèque pour parler avec SQLite depuis C#
+- ajouter en haut du fichier c# - using Microsoft.Data.Sqlite; pour importer la bibliotheque
+
+## separer les fichiers
+
+public static void Init()
+│ │ │ │
+│ │ │ └── Le nom (tu choisis ce que tu veux)
+│ │ └── Ne retourne rien
+│ └── Pas besoin de créer un objet
+└── Accessible depuis d'autres fichiers
+
+- class Database
+  Un conteneur pour tes fonctions BDD
+- public autre choix -> private
+  Accessible depuis d'autres fichiers
+- static autre choix -> ""
+  Pas besoin de faire new Database()
+- void autre choix -> int, string, bool, double
+  Ne retourne rien
+- Init()
+  Le nom de ta fonction

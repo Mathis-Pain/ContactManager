@@ -1,4 +1,8 @@
-﻿Dictionary<string, string> contacts = new Dictionary<string, string>();
+﻿using ContactManager.utils;
+
+Database.Init();
+
+Dictionary<string, string> contacts = new Dictionary<string, string>();
 string option = "";
 /* bool present = true; */
 
