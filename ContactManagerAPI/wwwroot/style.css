@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  align-items: center;
+}
+h1 {
+  width: fit-content;
+  background-color: chocolate;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#btnAdd {
+  background-color: darkolivegreen;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 30px;
+}
+#btnAdd:hover {
+  transform: translateY(-0.98px);
+}
+#btnAdd:active {
+  /*  X,Y,flou et 0,0,0 noir opacité 20% */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+}

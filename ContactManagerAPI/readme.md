@@ -13,10 +13,10 @@ Fonctionnalités :
 Cration du dossier principale et initialisation du projet
 
 - dotnet new console : initialise le projet comme un npm init en js/node
-  . dotnet new console # App qui tourne dans le terminal
-  . dotnet new web # projet web minimal casi vide
-  . dotnet new webapi # API REST (comme un serveur Express en JS)
-  . dotnet new winforms # App avec fenêtres (Windows only)
+  - dotnet new console # App qui tourne dans le terminal
+  - dotnet new web # projet web minimal casi vide
+  - dotnet new webapi # API REST (comme un serveur Express en JS)
+  - dotnet new winforms # App avec fenêtres (Windows only)
 - dotnet run : lance le programme
 
 Console.Writeline("");
