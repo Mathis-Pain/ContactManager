@@ -85,3 +85,10 @@ contact.Num = "0612345678"
     }
 
 }
+
+## Communiquer avec la base de donnée
+
+Méthode de requete
+
+ExecuteNonQuery() : INSERT, DELETE, UPDATE
+ExecuteReader() : SELECT (lire des données)

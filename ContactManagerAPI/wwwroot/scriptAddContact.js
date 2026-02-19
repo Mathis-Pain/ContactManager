@@ -1,5 +1,5 @@
-let user = document.querySelector("#name");
-let num = document.querySelector("#num");
+export let user = document.querySelector("#name");
+export let num = document.querySelector("#num");
 let btnAdd = document.querySelector("#btnAdd");
 
 btnAdd.addEventListener("click", async function (e) {
@@ -16,6 +16,12 @@ btnAdd.addEventListener("click", async function (e) {
       },
       body: JSON.stringify(contact),
     });
+    let data = await reponse.json();
+    if (reponse.ok) {
+      alert(data.message);
+    } else {
+      alert("Erreur serveur");
+    }
   } catch (error) {
     console.log("erreur fetch method POST");
   }

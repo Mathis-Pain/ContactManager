@@ -9,6 +9,7 @@ class DbRequest
     public static void Post(string name, string num)
     {
         //  using = crée une connexion ET la ferme automatiquement à la fin du bloc
+
         using (var connection = new SqliteConnection("Data Source=contacts.db"))
         {
             // On ouvre la connexion à la base de données
@@ -32,4 +33,43 @@ class DbRequest
 
         Console.WriteLine("Contact ajouté !");
     }
+    public static void Delete(string name){
+        using (var connection = new SqliteConnection("Data source=contacts.db"))
+        {
+            connection.Open();
+         string sql = "DELETE FROM users WHERE user = @name";
+            using(var command = new SqliteCommand(sql,connection))
+            {
+            command.Parameters.AddWithValue("@name", name);
+            command.ExecuteNonQuery();
+            }
+        }
+
+    Console.WriteLine("Contact supprimé");
+    }
+public static List<Contact> Get()
+{
+    var contacts = new List<Contact>();
+    using (var connection = new SqliteConnection("Data source=contacts.db"))
+    {
+        connection.Open();
+        string sql = "SELECT * FROM users";
+        using (var command = new SqliteCommand(sql, connection))
+        {
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    contacts.Add(new Contact
+                    {
+                        name = reader.GetString(1),  // colonne 2
+                        num = reader.GetString(2)     // colonne 3
+                    });
+                }
+            }
+        }
+    }
+
+    return contacts;
+}
 }
