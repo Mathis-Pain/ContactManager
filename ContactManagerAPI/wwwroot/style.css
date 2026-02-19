@@ -49,3 +49,13 @@ input {
   /*  X,Y,flou et 0,0,0 noir opacité 20% */
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
 }
+
+#output {
+  margin-top: 2rem;
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
