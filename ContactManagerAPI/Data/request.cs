@@ -1,6 +1,8 @@
 // On importe la bibliothèque SQLite
 using Microsoft.Data.Sqlite;
 
+
+
 // Déclaration de la classe Request
 class DbRequest
 {
@@ -10,7 +12,7 @@ class DbRequest
     {
         //  using = crée une connexion ET la ferme automatiquement à la fin du bloc
 
-        using (var connection = new SqliteConnection("Data Source=contacts.db"))
+        using (var connection = new SqliteConnection("Data Source=Data/contacts.db"))
         {
             // On ouvre la connexion à la base de données
             connection.Open();
@@ -34,7 +36,7 @@ class DbRequest
         Console.WriteLine("Contact ajouté !");
     }
     public static void Delete(string name){
-        using (var connection = new SqliteConnection("Data source=contacts.db"))
+        using (var connection = new SqliteConnection("Data source=Data/contacts.db"))
         {
             connection.Open();
          string sql = "DELETE FROM users WHERE user = @name";
@@ -50,7 +52,7 @@ class DbRequest
 public static List<Contact> Get()
 {
     var contacts = new List<Contact>();
-    using (var connection = new SqliteConnection("Data source=contacts.db"))
+    using (var connection = new SqliteConnection("Data source=Data/contacts.db"))
     {
         connection.Open();
         string sql = "SELECT * FROM users";
