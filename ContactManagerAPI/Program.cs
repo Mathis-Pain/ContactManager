@@ -8,5 +8,5 @@ app.UseDefaultFiles();
 app.UseStaticFiles(); 
 //Va chercher les fichiers statiques dans le dossier wwwroot
 // (WebRootPath = "wwwroot" ASP.NET Core configure automatiquement)
-
+Database.Init();
 app.Run();

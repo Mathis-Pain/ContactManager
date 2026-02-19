@@ -34,7 +34,7 @@ git checkout main
 
 public static void Init()
 │ │ │ │
-│ │ │ └── Le nom (tu choisis ce que tu veux)
+│ │ │ └── Le nom
 │ │ └── Ne retourne rien
 │ └── Pas besoin de créer un objet
 └── Accessible depuis d'autres fichiers
@@ -57,7 +57,31 @@ pour appeler un fichier venant d'un dossier different il faut cree un namespace 
 
 ‼️ on ne peut pas cree un serveur dans un projet classique qui tourne en local il faut en recree un
 
+à la place de : dotnet new console # App qui tourne dans le terminal
+lancer : dotnet new web # projet web minimal casi vide
+
 - Creation du serveur
   var builder = WebApplication.CreateBuilder(args);
   var app = builder.Build();
   (launchSettings.json permet de personnaliser l'adresse serveur)
+
+## création d'un controlleur (meme utilité qu'un handler en go)
+
+[ApiController] -> attribut qui active des comportements automatique gere par le framework (meilleur gestion des erreurs)
+[Route("api/contacts")] -> route de base du controller
+class ContactController : ControllerBase -> grâce à ControllerBase, la classe possède déjà :méthode Ok(),méthode BadRequest(),réponses HTTP
+{
+[HttpPost] -> attribut pour indiquer que la methode repond aux requetes http de type POST
+public IActionResult Add([FromBody] Contact contact)
+-> IActionResult type de retour http comme 200 400 etc
+-> Add nom de la methode
+-> [FromBody] la provenance de la variable
+-> Contact contact type nom
+{ ici "contact" contient déjà les données du JS !
+contact.Name = "Alice"
+contact.Num = "0612345678"
+
+        return Ok();
+    }
+
+}
