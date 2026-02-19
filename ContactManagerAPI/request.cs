@@ -2,7 +2,7 @@
 using Microsoft.Data.Sqlite;
 
 // Déclaration de la classe Request
-class Request
+class DbRequest
 {
     // Méthode statique Post
     // Elle permet d'insérer un contact dans la base
@@ -15,7 +15,7 @@ class Request
             connection.Open();
 
             // On prépare la requête SQL avec des paramètres
-            string sql = "INSERT INTO Contacts (Name, Num) VALUES (@name, @num)";
+            string sql = "INSERT INTO users (user, num) VALUES (@name, @num)";
 
             //  On crée une commande SQL liée à la connexion
             using (var command = new SqliteCommand(sql, connection))

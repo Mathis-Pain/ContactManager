@@ -9,7 +9,7 @@ btnAdd.addEventListener("click", async function (e) {
   };
   console.log(contact);
   try {
-    const reponse = await fetch("http://localhost:5000/api/contacts", {
+    const reponse = await fetch("http://localhost:5054/api/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
