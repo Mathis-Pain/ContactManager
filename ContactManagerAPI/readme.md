@@ -92,3 +92,7 @@ Méthode de requete
 
 ExecuteNonQuery() : INSERT, DELETE, UPDATE
 ExecuteReader() : SELECT (lire des données)
+
+.Dictionary correspond a map en js
+.Aggregate correspond a reduce en js
+.Where correspond a filter en js

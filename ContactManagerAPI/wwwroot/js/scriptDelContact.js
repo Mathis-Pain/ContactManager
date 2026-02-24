@@ -1,4 +1,5 @@
 import {user} from './scriptAddContact.js'
+import {displayContacts} from './scriptDisplayList.js'
 let btnDel = document.querySelector('#btnDel')
 
 btnDel.addEventListener('click', async () => {
@@ -18,4 +19,6 @@ btnDel.addEventListener('click', async () => {
   } catch (error) {
     console.log('erreur fetch method Delete')
   }
+  user.value = ''
+  displayContacts()
 })

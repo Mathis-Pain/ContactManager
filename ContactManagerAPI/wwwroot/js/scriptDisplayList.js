@@ -1,6 +1,6 @@
 let displayList = document.querySelector('#output')
 
-window.addEventListener('DOMContentLoaded', async () => {
+export async function displayContacts() {
   try {
     const reponse = await fetch('api/contacts/')
     const contacts = await reponse.json()
@@ -11,4 +11,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   } catch (error) {
     console.log('erreur lors du fetch get en db')
   }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  displayContacts()
 })
